@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback form</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/JQuery.js" type="text/javascript" defer></script>
+        <script src="../js/script.js"></script>
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <div id="content"class="contentBody">
+            <div class="contentContainer">
+                <feed class="image-right">
+                    <img class="feed-image" src="../Pict/feedbackpic.png" alt="Feedback Image">
+                </feed>
+                <form action="https://api.web3forms.com/submit" method="POST" class="feedContainer" id="form" >
+                    <feed class="contact-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </feed>
+                    <input type="hidden" name="access_key" value="f30e14fb-06f8-4b58-bc2f-7eaeb0808328">
+                    <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="youremail@email.com" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit <img src="Pict/done.png" height="20px" alt=></button> 
+                </form>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Engine</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/JQuery.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="searchContainer">
+            <div class="search-box">
+                <div class="row">
+                    <span>I want to eat local food from</span>
+                    <input type="text" id="input-box" placeholder="Search any state" autocomplete="off">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <div class="result-box"></div>
+            </div>
+        </div>
+        <div class="popularCon">
+            <div class="popular">
+                <h1>Popular</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="card-container">
+                    <div class="card-slider">
+                        <img src="../Pict/NasiLemak.jpg" alt="image" class="card-img" width="402px" height="230px">
+                        <div class="card-data">
+                            <h2 class="card-title">Nasi Lemak</h2>
+                            <a href="recipe/selangor/nasilemak.html" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-slider">
+                        <img src="../Pict/RotiCanai.png" alt="image" class="card-img" width="402px" height="230px">
+                        <div class="card-data">
+                            <h2 class="card-title">Roti Canai</h2>
+                            <a href="recipe/selangor/roticanai.html" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-slider">
+                        <img src="../Pict/CharKueyTeow.jpg" alt="image" class="card-img" width="402px" height="230px">
+                        <div class="card-data">
+                            <h2 class="card-title">Char Kway Teow</h2>
+                            <a href="recipe/penang/charkwayteow.html" class="card-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Jscript needs to run after the DOM is fully loaded.-->
+        <script src="../js/search.js"></script>
+
+        <div id="footer"></div>
+    </body>
+</html>
