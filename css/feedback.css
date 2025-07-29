@@ -1,0 +1,182 @@
+.contentContainer{
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+@media only screen and (max-width: 1023px){
+    .image-right{
+        display: none;
+    }
+
+    .contentContainer{ 
+        box-sizing: content-box;
+        padding: 50px 15px 0px;
+        font-family: 'Outfit';
+        background: whitesmoke;
+        height: calc(100vh - 120px);
+    }
+
+    .feedContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .contact-title{
+        font-weight: 600;
+        color: black;
+        font-size: 35px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-title hr{
+        border: none;
+        width: 50%;
+        height: 5px;
+        background-color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .feedContainer button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(270deg, #ff994f,#fa6d86);
+        cursor: pointer;
+        width: 40%;
+    }
+    
+    .contact-inputs{
+        width: 250px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        font-weight: 500;
+        color: #666;
+        border-radius: 50px;
+        resize: none;
+    }
+    .feedContainer textarea{
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+    .contact-inputs:focus{
+        border: 2px solid #ff994f;
+    }
+    .contact-inputs::placeholder{
+        color: #a9a9a9;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .contentBody{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contentContainer{
+        width: 1080px;  
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        padding: 0px 50px 0px;
+        box-sizing: content-box;
+        font-family: 'Outfit';
+        height: calc(100vh - 80px);
+    }
+    
+    .image-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100vw/2);
+    }
+    
+    .feed-image{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .feedContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: calc(100vw/2);
+    }
+    
+    .contact-title{
+        font-weight: 600;
+        color: black(164, 79, 154);
+        font-size: 40px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .contact-title hr{
+        border: none;
+        width: 50%;
+        height: 5px;
+        background-color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .feedContainer button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(270deg, #ff994f,#fa6d86);
+        cursor: pointer;
+        width: 40%;
+    }
+    
+    .contact-inputs{
+        width: 400px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        font-weight: 500;
+        color: #666;
+        border-radius: 50px;
+        resize: none;
+    }
+    .feedContainer textarea{
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+    .contact-inputs:focus{
+        border: 2px solid #ff994f;
+    }
+    .contact-inputs::placeholder{
+        color: #a9a9a9;
+    }
+    
+}

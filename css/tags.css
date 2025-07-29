@@ -1,0 +1,110 @@
+
+
+.body-tags > h1{
+    font-size: 30px;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-bottom:10px ;
+}
+
+.tag-tag > h5{
+    padding-top: 10px;
+    color: black;
+}
+
+@media only screen and (max-width: 426px) {
+    .tags-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .body-tags{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tags-wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .tag-tag{
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: white;
+        margin: 10px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px 10px gray;
+    }
+    
+
+    .tag-tag > img{
+        width: 18rem;
+        height: 12rem;
+    }
+    
+    .tag-tag > h5{
+        padding-top: 10px;
+        color: black;
+    }
+    
+    .tag-tag:hover{
+        filter: blur(2px);
+    }
+}
+
+@media only screen and (min-width: 1224px){
+    .tags-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-tags{
+        width: 1180px;
+        padding: 0px 70px 0px;
+    }
+
+    .body-tags > h1{
+        font-size: 30px;
+        padding-top: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .tags-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+    
+    .tag-tag{
+        font-size: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: white;
+        margin: 10px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px 10px gray;
+    }
+
+    .tag-tag > img{
+        width: 18rem;
+        height: 12rem;
+    }
+
+    .tag-tag:hover {
+        filter: blur(2px);
+    }
+}

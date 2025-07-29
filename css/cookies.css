@@ -1,0 +1,27 @@
+.cookie-consent-popup {
+    text-align: center;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 450px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.cookie-consent-popup button {
+    margin-left: 15px;
+    background-color: #4c6faf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cookie-consent-popup button:hover {
+    background-color: #4c6faf;
+}

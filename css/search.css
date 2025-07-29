@@ -1,0 +1,293 @@
+.search-box{
+    height: 12vh;
+    background-color: whitesmoke;
+    border-bottom: solid black;
+    margin: 0px 10px 0px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    gap: 5px;
+    padding: 50
+}
+.row > span{
+    margin-top: 7%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+#input-box{
+    font-family:'Courier New', Courier, monospace;
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button .fa{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+::placeholder{
+    color: #555;
+}
+.result-box{
+    z-index: 999;
+    width: 90vw;
+    max-height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    color: black;
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background-color: #8b8888;
+}
+
+
+.popular{
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.content{
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.card-slider{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.card-img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 20px;
+}
+.card-data{
+    width: 330px;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 15px;
+    position: absolute;
+    bottom: -0.9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s
+}
+.card-title{
+    font-size: larger;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: .75rem;
+
+}
+.card-button{
+    color: black;
+    text-align: center;
+}
+.card-button:hover{
+    text-decoration: underline;
+}
+.card-slider:hover .card-data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .2s;
+}
+.card-slider:hover{
+    animation: remove-overflow 2s forwards;
+}
+.card-slider:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+.card-slider:not(:hover) .card-data{
+    animation: remove-data 1s forwards;
+}
+@keyframes show-data{
+    50%{
+        transform: translateY(-7rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+@keyframes remove-data {
+    0%{
+        transform: translateY(-3rem);
+    }
+    50%{
+        transform: translateY(-7rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+@keyframes show-overflow{
+    50%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+@media screen and (max-width: 340px){
+    .container{
+        margin-inline: 1rem;
+    }
+    .card-data{
+        width: 250px;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 900px){
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 1500px){
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+}
+
+@media only screen and (min-width: 1224px){
+.container{
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card-img{
+    width: 402px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+    .searchContainer{
+        width: 1180px;
+        padding: 20px 50px 0px;
+        margin: auto;
+    }
+
+    .search-box{
+        margin: auto;
+        border-radius: 5px;
+        background-color: white;
+        border: solid black;
+        height: 80px;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        flex-direction:row;
+        padding: 10px 20px;
+        gap: 0;
+    }
+
+    .row > span{
+        margin-top:0;
+        margin-right: 15px;
+        text-transform: uppercase;
+    }
+
+    .result-box{
+        z-index: 999;
+        width: 1075px;
+        max-height: 300px;
+        overflow-y: scroll;
+        position: absolute;
+        background-color: white;
+        border-radius: 15px;
+        margin-left: 0px;
+    }
+
+    #input-box{
+        text-align: start;
+    }
+
+    .content{
+        box-sizing: border-box;
+    }
+
+    .popularCon{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .popular{
+        width: 1240px;
+        font-size: x-large;
+        text-align: start;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: 1.5rem;
+        padding-block: 5rem;
+        flex-wrap: wrap;
+    }
+}

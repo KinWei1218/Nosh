@@ -1,0 +1,41 @@
+@import "header.css";
+@import "footer.css";
+@import "sidebar.css";
+@import "post.css";
+@import "feedback.css";
+@import "media.css";
+@import "search.css";
+@import "recipe.css";
+@import "slideshow.css";
+@import "tags.css";
+@import "aboutus.css";
+@import "cookies.css";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    flex: 1 0 auto;
+    background: whitesmoke;
+    min-height: 100vh;
+}
+
+.mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+
+
